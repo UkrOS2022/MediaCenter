@@ -602,7 +602,7 @@ class MediaCenter(QWidget):
                 self.label.hide()
                 self.label.deleteLater()
 
-            if fileName.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+            if fileName.lower().endswith(('.png', '.bmp', '.jpg', '.jpeg', '.gif')):
                 pixmap = QPixmap(fileName)
                 max_width = self.display_width - 10
                 max_height = self.display_height - 160
@@ -657,7 +657,7 @@ class MediaCenter(QWidget):
                 self.label.hide()
                 self.label.deleteLater()
 
-            if fileName.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+            if fileName.lower().endswith(('.png', '.bmp', '.jpg', '.jpeg', '.gif')):
                 pixmap = QPixmap(fileName)
                 max_width = self.display_width - 10
                 max_height = self.display_height - 160
@@ -846,7 +846,7 @@ if __name__ == '__main__':
                 window.label.hide()
                 window.label.deleteLater()
 
-            if fileName.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+            if fileName.lower().endswith(('.png', '.bmp', '.jpg', '.jpeg', '.gif')):
                 pixmap = QPixmap(fileName)
                 max_width = window.display_width - 10
                 max_height = window.display_height - 160
